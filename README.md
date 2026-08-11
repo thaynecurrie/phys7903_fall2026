@@ -1,2 +1,6 @@
-# phys7903_fall2026
-UTSA course, fall 2026
+Physics 4953/7903 (Fall 2026) Repository
+===============================================================
+
+This repository includes lecture notes, code, relevant files, etc as well as problem sets. format [ipynb, markdown, pdf]  
+
+The course will be set to public for the duration of the semester ;).
