@@ -202,7 +202,7 @@ The tallest building in the city of Kuala Lumpur, MY is the Petronas Towers with
 
 Start with a list 4 elements long, including a mix of floating point numbers and integers: $\pi$, e, 3.1 and 5.
 
-Remove 3.1 using the ``remove`` function and array indexing.  
+Remove 3.1 using a) the ``remove`` function and b) array indexing using ``pop``.  
 
 Append Euler's gamma constant to the list
 
