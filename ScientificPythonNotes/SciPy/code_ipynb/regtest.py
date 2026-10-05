@@ -6,8 +6,8 @@ from astropy.io import fits
 def run():
 
 
- image1=fits.open('../files/n0001e.fits')[0].data
- image2=fits.open('../files/n0024e.fits')[0].data
+ image1=fits.open('./files/n0001e.fits')[0].data
+ image2=fits.open('./files/n0024e.fits')[0].data
 
  image1=np.where(np.isnan(image1),0,image1)
  image2=np.where(np.isnan(image2),0,image2)
@@ -24,17 +24,17 @@ def run():
  #result1=shift(image1,[centroid1[0]-ycen,centroid1[1]-xcen],order=3)
  #result2=shift(image2,[centroid2[0]-ycen,centroid2[1]-xcen],order=3)
 
- fits.writeto('../files/shifted_1.fits',result1,overwrite=True)
- fits.writeto('../files/shifted_2.fits',result2,overwrite=True)
+ fits.writeto('./files/shifted_1.fits',result1,overwrite=True)
+ fits.writeto('./files/shifted_2.fits',result2,overwrite=True)
 
 #write the difference between the first file and results from a more optimized code
 
- comparison_1=fits.open('../files/n0001reg.fits')[0].data
+ comparison_1=fits.open('./files/n0001reg.fits')[0].data
  
  difference=result1-comparison_1
- fits.writeto('../files/difference_1.fits',difference,overwrite=True)
+ fits.writeto('./files/difference_1.fits',difference,overwrite=True)
 
  absreldiff=np.abs(difference)/comparison_1
 
- fits.writeto('../files/absreldiff.fits',absreldiff,overwrite=True)
+ fits.writeto('./files/absreldiff.fits',absreldiff,overwrite=True)
 
