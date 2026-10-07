@@ -1,6 +1,6 @@
 # _Python for Scientific Data Analysis_
 
-## Homework #5 (due Oct 16, 6 pts total)
+## Homework #5 (due Oct 19)
 
 
 
