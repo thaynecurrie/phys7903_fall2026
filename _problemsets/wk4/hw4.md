@@ -1,6 +1,6 @@
 # _Python for Scientific Data Analysis_
 
-## Homework # 4 (October 12)
+## Homework # 4 (October 15)
 
 ### 1. Broadcasting
 
