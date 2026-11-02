@@ -1,0 +1,72 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: id, datatype: int64}
+# - {name: xcenter, unit: pix, datatype: float64}
+# - {name: ycenter, unit: pix, datatype: float64}
+# - {name: aperture_sum, unit: electron / s, datatype: float64}
+# - {name: aperture_sum_err, unit: electron / s, datatype: float64}
+# - {name: snr, datatype: float64}
+# - {name: abmag, datatype: float64}
+# - {name: sky_coord.ra, unit: deg, datatype: float64}
+# - {name: sky_coord.dec, unit: deg, datatype: float64}
+# - {name: ra_icrs, unit: deg, datatype: float64}
+# - {name: dec_icrs, unit: deg, datatype: float64}
+# meta: !!omap
+# - {date: '2025-11-18 14:09:10 CST'}
+# - version: {Python: 3.12.4, astropy: 7.1.1, bottleneck: 1.3.7, gwcs: 0.26.0, matplotlib: 3.8.4, numpy: 1.26.4, photutils: 2.0.2, scipy: 1.16.2,
+#     skimage: 0.23.2}
+# - {aperture_photometry_args: 'method=''exact'', subpixels=5'}
+# - {aperture: CircularAperture}
+# - {aperture_r: 5.0}
+# - __serialized_columns__:
+#     aperture_sum:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: &id001 !astropy.units.Unit {unit: electron / s}
+#       value: !astropy.table.SerializedColumn {name: aperture_sum}
+#     aperture_sum_err:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: *id001
+#       value: !astropy.table.SerializedColumn {name: aperture_sum_err}
+#     dec_icrs:
+#       __class__: astropy.coordinates.angles.core.Latitude
+#       unit: &id002 !astropy.units.Unit {unit: deg}
+#       value: !astropy.table.SerializedColumn {name: dec_icrs}
+#     ra_icrs:
+#       __class__: astropy.coordinates.angles.core.Longitude
+#       unit: *id002
+#       value: !astropy.table.SerializedColumn {name: ra_icrs}
+#       wrap_angle: &id003 !astropy.coordinates.Angle
+#         unit: *id002
+#         value: 360.0
+#     sky_coord:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.core.Latitude
+#         unit: *id002
+#         value: !astropy.table.SerializedColumn {name: sky_coord.dec}
+#       equinox: !astropy.time.Time {format: jyear, in_subfmt: '*', jd1: 2451545.0, jd2: 0.0, out_subfmt: '*', precision: 3, scale: tt}
+#       frame: fk5
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.core.Longitude
+#         unit: *id002
+#         value: !astropy.table.SerializedColumn {name: sky_coord.ra}
+#         wrap_angle: *id003
+#       representation_type: spherical
+#     snr:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: ''}
+#       value: !astropy.table.SerializedColumn {name: snr}
+#     xcenter:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: &id004 !astropy.units.Unit {unit: pix}
+#       value: !astropy.table.SerializedColumn {name: xcenter}
+#     ycenter:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: *id004
+#       value: !astropy.table.SerializedColumn {name: ycenter}
+# schema: astropy-2.0
+id xcenter ycenter aperture_sum aperture_sum_err snr abmag sky_coord.ra sky_coord.dec ra_icrs dec_icrs
+1 90.73 59.43 0.12039154582527045 0.008044023138750599 14.966583729142496 28.24481002294352 53.158891500867604 -27.765002141410175 53.15888794969767 -27.764999233172258
+2 73.63 139.41 0.6150243632978062 0.008166280776044187 75.31266437739716 26.474069199845104 53.15921313626186 -27.763669058236427 53.159209584924724 -27.763666149968557
+3 43.62 61.63 0.213526159948924 0.008069761400151903 26.460033867284434 27.62267227553782 53.159778816470286 -27.764965241221894 53.159775265272245 -27.76496233290132
