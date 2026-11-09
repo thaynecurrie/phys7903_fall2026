@@ -1,4 +1,4 @@
-## Homework 8 - Week 13 (due November 25)
+## Homework  (due November 23)
 ### NOTE !!! there will be one more HW assignment that will cover some stuff in AstroPy + remainder of course content (e.g. MCMC)
 
 
@@ -78,7 +78,7 @@ Assume that the pixel scale is roughly 9.952 milliarcseconds/pixel and that the 
 
     (again, the image is north-up, east-left: so objects east of the star will have a negative x value and vice versa. If its position were 0.5 arcseconds east and -0.7 arcseconds south of the star then you would report this as [East, North] = [0.5,-0.7]).
  
-### 8. Photometry with Photutils (+ 2 possible extra credit point)
+### 8. Photometry with Photutils 
     
 * using photutils, plot the radial-profile of the star.  Find where the star's brightness roughly (emphasis on **roughly**!) decreases to about half its peak value: round up to the nearest integer and set this value to be the aperture radius.
 
@@ -94,7 +94,6 @@ Hints:
 * you do not need to compute astrometric errors or photometric errors
 
 
-**Extra Credit** (2 points)
 
 - Display the image as shown below
  ![](./planetdiscovery.png) (1 point)
